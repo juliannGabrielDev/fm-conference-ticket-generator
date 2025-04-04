@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/style.css">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      position: absolute;
+      bottom: 10px;
+      transform: translateX(-50%);
+      left: 50%;
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a { color: hsl(0, 0%, 100%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="assets/images/logo-full.svg" alt="" class="logo">
+  </header>
+  <main>
+    <h1 id="title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p id="p-description">Secure your spot at next year's biggest coding conference.</p>
+    <!-- Form starts -->
+    <form id="ticket-form" action="">
+      <label for="avatar-input">Upload Avatar *</label>
+      <div id="drop-area">
+        <div id="avatar-input-area">
+          <div class="in-avatar-icon">
+            <img src="assets/images/icon-upload.svg" alt="Upload">
+          </div>
+          <input id="avatar-input" type="file" accept="image/*" name="" required>
+          <p>Drag and drop or click to upload</p>
+        </div>
+        <div id="avatar-info">
+          <img id="image-preview" src="" alt="Avatar">
+          <button id="remove-avatar-btn">Remove image</button>
+          <button id="change-avatar-btn">Change image</button>
+        </div>
+      </div>
+      <p class="in-avatar-disclaimer">
+        <img src="assets/images/icon-info.svg" alt="Icono info">
+        <span id="avatar-disclaimer">Upload your photo (JPG or PNG, max size: 500KB).</span>
+      </p>
+      <label for="in-name">Full Name *</label>
+      <input id="in-name" type="text" name="" required>
+      <label for="in-email">Email Address *</label>
+      <input id="in-email" type="email" name="" placeholder="example@email.com" required>
+      <p id="email-disclaimer"></p>
+      <label for="in-user">GitHub Username *</label>
+      <input id="in-user" type="text" name="" placeholder="@yourusername" required>
+      <input id="generate-btn" type="submit" value="Generate My Ticket" disabled>
+    </form>
+    <!-- Form ends -->
+  </main>
+  <div id="ticket">
+    <img id="ticket-logo"" src="assets/images/logo-full.svg" alt="">
+    <p class="ticket-date">Jan 31, 2025 / Austin, TX</p>
+    <img id="ticket-avatar" src="" alt="Avatar">
+    <p id="ticket-name">name</p>
+    <p class="ticket-user"><img src="assets/images/icon-github.svg" alt="">@<span id="ticket-user">user</span></p>
+    <p class="ticket-code">#<span id="ticket-code">code</span></p>
+  </div>
+
+  <!-- Generated tickets ends -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Julián Gabriel</a>.
+  </div>
+
+  <div class="squiggly-line-top"></div>
+  <div class="squiggly-line-bottom"></div>
+  <script src="js/script.js""></script>
+</body>
+</html>
